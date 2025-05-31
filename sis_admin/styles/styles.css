@@ -1,0 +1,98 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url('../img/bg.jfif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.sidebar .nav-link,
+.offcanvas-body .nav-link {
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar .nav-link:hover,
+.offcanvas-body .nav-link:hover {
+    background-color: #108500;
+    color: #fff !important;
+}
+
+.img-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-circle-sm {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main > .container {
+    min-height: calc(100vh - 72px - 32px);
+}
+
+main .card {
+    max-height: 100%;
+}
+
+main .table-responsive {
+    max-height: 70vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #108500;
+    color: white;
+    max-width: 150px;
+    word-wrap: break-word;
+    white-space: normal !important;
+}
+
+table th,
+table td {
+    max-width: 150px;
+    word-wrap: break-word;
+    white-space: normal !important;
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+@media (max-width: 767.98px) {
+    .d-none.d-md-table-cell {
+        display: none !important;
+    }
+}
+
+.table-green thead th {
+    background-color: #108500 !important;
+    color: white !important;
+}
+
+.table-greens thead th {
+    background-color: #108500 !important;
+    color: white !important;
+}
+.table-greens tbody td {
+    background-color: #108500 !important;
+    color: white !important;
+}
